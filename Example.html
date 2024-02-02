@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/Main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    header {
+      background-color: aqua;
+    }
+
+    .navmenu {
+      position: relative;
+    }
+    .listitems {
+      position: absolute;
+      left: 0;
+      top: 2vw;
+      width: 14vw;
+      background-color: rgb(241, 243, 244);
+      box-shadow: 10px 10px 10px;
+      list-style-type: none;
+      padding: 1vw 0;
+      font-size: 0.8vw;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .listitems.menu-open {
+      opacity: 1;
+      visibility: visible;
+    }
+    .listitems li a {
+      margin: 1vw;
+      display: block;
+      text-decoration: none;
+      transition:all 0.3s ease;
+      
+    }
+    .listitems li a:hover{
+      background-color: rgb(140, 145, 145);
+      padding:0.5vw;
+      border-radius: 10px;
+
+    }
+    .fa-bars{
+      
+      text-align: center;
+      padding:5px;
+      color: beige;
+      font-size: 2vw;
+      margin: 0 1vw;
+      color: black;
+    }
+    .fa-times{
+      font-size: 2vw;
+      margin: 0 1vw;
+      padding: 0.2vw 0.3vw;
+      background-color: rgb(174, 118, 226);
+      border-radius: 5px;
+    }
+    .listitems .megamenu{
+      width:40vw;
+      position: absolute;
+      display:flex;
+      align-items: flex-start;
+      left:15vw;
+      top:1vw;
+      border:1px solid rgba(192, 192, 192, 0.349);
+      padding:1vw;
+      box-shadow: 1vw 1vw 1vw whitesmoke;
+      opacity:0;
+      visibility: hidden;
+
+    }
+    .listitems li:hover .megamenu{
+      opacity: 1;
+      visibility: visible;
+      
+    }
+
+    .megamenu ul li{
+      list-style-type: none;
+      padding:0.5vw;
+      font-size: 0.9vw;
+      
+    }
+    .listitems .megamenu ul li img{
+      width:10vw;
+      height:7vw;
+      mix-blend-mode:multiply;
+    }
+    .megamenu ul{
+      margin:1vw;
+    }
+    
+    
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Assets/Aitlogo.jpeg" alt="">
+    </div>
+    <nav class="navmenu">
+      <i class="fa-solid fa-bars" id="menubar"></i>
+      <ul class="listitems">
+        <li class="submenu"><a href="#">ARTS &CRAFTS</a>
+          <div class='megamenu'>
+            <ul>
+              <li><h3>New Arrivals</h3></li>
+              <li>Dresses</li>
+              <li>Jackets</li>
+              <li>Hoodies & Sweatshirts</li>
+              <li>Sweaters</li>
+              <li>Tops & Tees</li>
+              <li>Party Dresses</li>
+             </ul>
+             <ul>
+              <li><h3>Trending</h3></li>
+              <li>Dresses</li>
+              <li>Jackets</li>
+              <li>Hoodies & Sweatshirts</li>
+              <li>Sweaters</li>
+              <li>Tops & Tees</li>
+              <li>Party Dresses</li>
+             </ul>
+
+             <ul>
+              <li><img src="./Assets/ATM-Card1.jpeg" alt="WATCH"></li>
+              <li><img src="./Assets/ATM-Card2.jpeg" alt=""></li>
+             </ul>
+          </div>
+
+        </li>
+        <li><a href="#">FASHION</a></li>
+        <li><a href="#">HEALTH & HOUSEHOLD</a></li>
+        <li> <a href="#">BAGES & SHOES</a></li>
+        <li><a href="#">JEWELRY & WATCHES</a></li>
+        <li><a href="#">BEAUTY & WELATH</a></li>
+        <li><a href="#">ELECTRONICS</a></li>
+        <liHOME & GARDEN>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="inpt">
+      <label for="Select"></label>
+      <select name="country" class="All">
+        <option value="country">All</option>
+        <option value="India">Watches</option>
+        <option value="Aus">Cart</option>
+        <option value="USA">Heritage</option>
+        <option value="France">Prize</option>
+      </select>
+      <input class="srch" type="text" placeholder="search">
+      <button class="btn4"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="icon">
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+      <p class="number">0</p>
+    </div>
+  </header>
+  <script>
+   
+    var menuIcon = document.querySelector('#menubar');
+    var navMenu = document.querySelector('.listitems');
+
+    menuIcon.addEventListener('click', function () {
+      // Toggle the class that controls menu visibility
+      navMenu.classList.toggle('menu-open');
+
+      // Toggle the icon between "bars" and "times"
+      menuIcon.classList.toggle('fa-bars');
+      menuIcon.classList.toggle('fa-times');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./Assets/Aitlogo.jpeg" alt="">
+        </div>
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <nav class="navmenu">
+            <i class="fa-solid fa-bars" id="menubar"></i>
+            <ul class="listitems">
+              <li class="submenu"><a href="#">ARTS &CRAFTS</a>
+                <div class='megamenu'>
+                  <ul>
+                    <li><h3>New Arrivals</h3></li>
+                    <li>Dresses</li>
+                    <li>Jackets</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Sweaters</li>
+                    <li>Tops & Tees</li>
+                    <li>Party Dresses</li>
+                   </ul>
+                   <ul>
+                    <li><h3>Trending</h3></li>
+                    <li>Dresses</li>
+                    <li>Jackets</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Sweaters</li>
+                    <li>Tops & Tees</li>
+                    <li>Party Dresses</li>
+                   </ul>
+      
+                   <ul>
+                    <li><img src="./Assets/ATM-Card1.jpeg" alt="WATCH"></li>
+                    <li><img src="./Assets/ATM-Card2.jpeg" alt=""></li>
+                   </ul>
+                </div>
+      
+              </li>
+              <li><a href="#">FASHION</a></li>
+              <li><a href="#">HEALTH & HOUSEHOLD</a></li>
+              <li> <a href="#">BAGES & SHOES</a></li>
+              <li><a href="#">JEWELRY & WATCHES</a></li>
+              <li><a href="#">BEAUTY & WELATH</a></li>
+              <li><a href="#">ELECTRONICS</a></li>
+              <liHOME & GARDEN>
+                </li>
+            </ul>
+          </nav>
+        <div class="inpt">
+            <label for="Select"></label>
+            <select name="country" class="All">
+                <option value="country">All</option>
+                <option value="India">Watches</option>
+                <option value="Aus">Cart</option>
+                <option value="USA">Heritage</option>
+                <option value="France">Prize</option>
+            </select>
+                <input class="srch" type="text" placeholder="search">
+                <button class="btn4"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <p class="number">0</p>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="picture">
+            <img src="./Assets/banner-1.jpg" class="pic" >
+            <img src="./Assets/banner-2.jpg" class="pic">
+            <img src="./Assets/banner-3.jpg" class="pic">
+            <div class="lcontainer">
+                <p>Effortlessly cool, for the traditionalists of today</p>
+                <a href="#">EXPLORE COLLECTION</a>
+            </div>
+            <form class="rdo">
+                <input type="radio" id="radio1" name="slider" checked>
+                <input type="radio" id="radio2" name="slider">
+                <input type="radio" id="radio3" name="slider">
+            </form>
+            <div class="shift">
+                <button onclick="goPrev()">
+                    < </button>
+                <button onclick="goNext()"> > </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="details">
+        <ol>
+            <li><i class="fa-solid fa-truck"></i></li>
+            <li>
+                <h3>Two hour delivery</h3>
+            </li>
+            <li class="para">available in most metros n-stock products</li>
+            <li>LEARN MORE</li>
+        </ol>
+
+        <ol>
+            <li><i class="fa-solid fa-message"></i></i></li>
+            <li>
+                <h3>Get hellp buying</h3>
+            </li>
+            <li class="para">Have a question? call a specialist or chat online for help</li>
+            <li>CONTACT US</li>
+        </ol>
+
+        <ol>
+            <li><i class="fa-solid fa-credit-card"></i></li>
+            <li>
+                <h3>Find the card for you</h3>
+            </li>
+            <li class="para"> Get 3% daily cash with special financing offers for us</li>
+            <li>LEARN MORE</li>
+        </ol>
+
+    </section>
+    <section class="smwatch">
+        <div class="watch">
+            <img src="./Assets/product-1.jpg" alt="">
+            <div class="referance">
+                <h4>Metro 38 Date</h4>
+                <p>Reference 1102</p>
+                <div class="box"><span></span>
+                    <p>$399</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="watch">
+            <img src="./Assets/product-1.jpg" alt="">
+            <div class="referance">
+                <h4>Metro 38 Date</h4>
+                <p>Reference 1102</p>
+                <div class="box"><span></span>
+                    <p>$399</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="vr">
+        <div class="content">
+            <img src="./Assets/content-2.jpg" alt="">
+        </div>
+        <div>
+            <ol>
+                <li class="p1">
+                    <p>ALL-IN-ONE-VR</p>
+                </li>
+                <li>
+                    <h2>Always ready when you are</h2>
+                </li>
+                <li>
+                    <p>Oculus Go is our all-in-one-VR headset tht's portable and easy to use. Experiance entertainment
+                        on the go with no PC. Wires or hassles.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+   
+    <body>
+        <section class="oculus" id="productSection">
+    
+        </section>
+      
+    <section class="collection">
+        <!-- <img src="./Assets/content-4.jpg" alt=""> -->
+        <div class="colbox">
+            <p>THE PRIME <br>AMBASSADOR</p>
+            <p>EXPLORE COLLECTION</p>
+        </div>
+    </section>
+    <section class="starterplan">
+        <div class="plan">
+            <p class="sp">Starter Plan <span class="spdoller">$10 </span></p>
+            <p class="time">/weekly</p>
+
+            <img src="./Assets/pricing-5.png" alt="">
+            <div class="check">
+                <input type="checkbox"><span>2 Accounts</span><br>
+                <input type="checkbox"><span> Up to 5GB Speed</span><br>
+                <input type="checkbox"><span>1 Domain</span><br>
+                <input type="checkbox"><span>24/7 Support</span><br>
+            </div>
+            <button>Get Started</button>
+        </div>
+        <div class="plan">
+            <p class="sp">Starter Plan <span class="spdoller">$50</span></p>
+            <p class="time">/monthly</p>
+            <img src="./Assets/pricing-5.png" alt="">
+            <div class="check">
+                <input type="checkbox"><span>2 Accounts</span><br>
+                <input type="checkbox"><span> Up to 5GB Speed</span><br>
+                <input type="checkbox"><span>1 Domain</span><br>
+                <input type="checkbox"><span>24/7 Support</span><br>
+            </div>
+            <button>Get Started</button>
+        </div>
+        <div class="plan">
+            <p class="sp">Starter Plan <span class="spdoller">$90</span></p>
+            <p class="time">/yearly</p>
+            <img src="./Assets/pricing-5.png" alt="">
+            <div class="check">
+                <input type="checkbox"><span>2 Accounts</span><br>
+                <input type="checkbox"><span> Up to 5GB Speed</span><br>
+                <input type="checkbox"><span>1 Domain</span><br>
+                <input type="checkbox"><span>24/7 Support</span><br>
+            </div>
+            <button>Get Started</button>
+        </div>
+    </section>
+    <div class="element">
+        <p>All-In-One-VR</p>
+        <h1>Oculus VR</h1>
+    </div>
+    <section class="thunb">
+        <!-- <img id="displayed-image" src="." alt=""> -->
+    </section>
+    <div class="images">
+        <img src="./Assets/thunb-1.jpg">
+        <img src="./Assets/thunb-2.jpg">
+        <img src="./Assets/thunb-3.jpg">
+        <img src="./Assets/thunb-4.jpg">
+        <img src="./Assets/thunb-5.jpg">
+    </div>
+
+    <section class="properties">
+        <div class="head2">
+            <p class="para1">All-In-One-VR</p>
+            <h1>Oculus VR</h1><br>
+
+            <div class="images2">
+                <p>Select Your Oculus:</p>
+                <img src="./Assets/product-items-1.jpg" alt="">
+                <img src="./Assets/product-items-2.jpg" alt="">
+                <img src="./Assets/product-items-3.jpg" alt="">
+            </div>
+            <div class="features">
+                <div class="sltclr">
+                    <label for="name">Select Color: <span>Gray</span></label><br><br>
+                    <input class="gray" type="button">
+                    <input class="orange" type="button">
+                    <input class="yellow" type="button">
+                </div>
+                <div class="storage">
+                    <label for="Memory">Memory(GB):</label><br><br>
+                    <select name="memory" id="memory">
+                        <option value="32gb">32gb</option>
+                        <option value="64gb">64gb</option>
+                        <option value="128gb">128gb</option>
+                        <option value="256gb">256gb</option>
+                    </select>
+                </div>
+                <div class="storage">
+                    <label for="quantity">Select Quantity:</label><br><br>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="country">
+                <label for="Select">Select Shipping Country: <span>$ 30 USD</span></label><br>
+                <select name="country" id="country">
+                    <option value="country">---Select Country---</option>
+                    <option value="India">India</option>
+                    <option value="Aus">Aus</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                </select>
+            </div>
+        </div>
+        <div class="pricedetails">
+            <p>price:</p>
+            <h2>149USD &nbsp;<span class="actprice">$179 USD</span></h2>
+            <button><i class="fa-solid fa-cart-shopping">&nbsp;</i>ADD TO CART</button>
+            <button class="btn2"><i class="fa-solid fa-cart-shopping">&nbsp;</i> BUY NOW</button>
+        </div>
+    </section>
+
+    <section class="Haritage">
+        <div class="Explore">
+            <h3>Haritage 1921</h3>
+            <p> minimalistic & modern</p>
+            <p><a href="">Explore</a></p>
+            <img src="./Assets/product-4.jpg" alt="">
+        </div>
+        <div class="Explore">
+            <h3>Haritage 1921</h3>
+            <p> minimalistic & modern</p>
+            <p><a href="">Explore</a></p>
+            <img src="./Assets/product-4.jpg" alt="">
+        </div>
+        <div class="Explore">
+            <h3>Haritage 1921</h3>
+            <p> minimalistic & modern</p>
+            <p><a href="">Explore</a></p>
+            <img src="./Assets/product-4.jpg" alt="">
+        </div>
+    </section>
+    <section class="Enquiry">
+        <div class="Ediv">
+            <div class="Icn"><i class="fa-solid fa-user-group"></i></div>
+            <h2>300</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div class="Ediv">
+            <div class="Icn"><i class="fa-solid fa-check fa"></i></div>
+            <h2>30</h2>
+            <p>Complete Projects</p>
+        </div>
+        <div class="Ediv">
+            <div class="Icn"><i class="fa-solid fa-user-group"></i></div>
+            <h2>12</h2>
+            <p>Pending Projects</p>
+        </div>
+        <div class="Ediv">
+            <div class="Icn"><i class="fa-solid fa-user-group"></i></div>
+            <h2>960</h2>
+            <p>Cup of Tea</p>
+        </div>
+    </section>
+    <section class="mail">
+        <div>
+            <h3>Get in Touch</h3><br>
+            <p>Be the first to know when new products drop and stay tuned</p>
+        </div>
+        <div>
+            <label for="mail">Enter your email address</label><br><br>
+            <input type="email" name="mail" placeholder="user@email.com">
+        </div>
+    </section>
+    <hr>
+    <section class="payment">
+        <div>
+            <p>Follow Us: &nbsp;
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </p>
+        </div>
+        <div>
+            <p>Follow Us: &nbsp; <img src="./Assets/payment.png" alt=""></p>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="footcols">
+            <p class="he1">Categories</p>
+            <div class="contents">
+                <p>Outfit</p>
+                <p>Sunglases</p>
+                <p>Watches</p>
+                <p>Bags</p>
+            </div>
+        </div>
+        <div class="footcols">
+            <p class="he1">Information</p>
+            <div class="contents">
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>FAQsmap</p>
+                <p>Comming Soon</p>
+                <p>404 page</p>
+            </div>
+        </div>
+        <div class="footcols">
+            <p class="he1">My Account</p>
+            <div class="contents">
+                <p>Orders</p>
+                <p>Downloads</p>
+                <p>Addresses</p>
+                <p>Account details</p>
+                <p>Lagout</p>
+            </div>
+        </div>
+        <div class="footcols">
+            <p class="he1">Community</p>
+            <div class="contents">
+                <p>VR for Good</p>
+                <p>Launch Pad</p>
+                <p>Creators Lab</p>
+                <p>Forums</p>
+                <p>Support</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./JS/Project3.js"></script>
+
+</body>
+
+</html>
